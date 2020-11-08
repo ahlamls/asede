@@ -54,3 +54,5 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['privacy'] = 'user/privacy';
 $route['terms'] = 'user/terms';
+$route['sulfikar'] = 'user/login';
+$route['sulfikarnt'] = 'user/register';

@@ -43,6 +43,7 @@
     <a href="#" class="btn btn-secondary w-100" data-toggle="modal" data-target="#komenModal">Komen</a>
   </div>
     </div>
+    <p class="card-text btn-link" onclick="salim()">Report</p>
 
 
     </div>
@@ -69,10 +70,13 @@ asede adalah situs untuk berbagi meme tanpa rasa khawatir di report , begal mark
 window.onload = function(e) {
             handledlsubtext()
             };
+function salim() {
+  alert("asw lu pereport");
+}
 
 function handledlsubtext() {
   subtext = document.getElementById("baoncikadap");
-  rand = Math.floor(Math.random() * 5);
+  rand = Math.floor(Math.random() * 9);
   if (rand == 1) {
     subtext.innerHTML = "Tidak seberat genshin impact";
   } else if (rand == 2) {
@@ -81,7 +85,15 @@ function handledlsubtext() {
     subtext.innerHTML = "ukuran kecil banget";
   } else if (rand == 4) {
     subtext.innerHTML = "support hp burn in dan jamur";
-  }
+  } else if (rand == 5) {
+    subtext.innerHTML = "tidak akan dibegal dan dibisu mark";
+  } else if (rand == 6) {
+    subtext.innerHTML = "rasanya seperti anda menjadi mas agus ";
+  } else if (rand == 7) {
+    subtext.innerHTML = "gak tau males pengen pake aplikasi";
+  } else if (rand == 8) {
+    subtext.innerHTML = "hari gini masih pake website? wassalam";
+  } 
 }
 </script>
 

@@ -36,4 +36,16 @@ class User extends CI_Controller {
 	$this->load->view('user/terms');
 		$this->load->view('user/modular/footer');
 	}
+
+	public function login() {
+		$this->load->view('user/modular/header');
+	$this->load->view('user/login');
+		$this->load->view('user/modular/footer');
+	}
+
+	public function register() {
+		$this->load->view('user/modular/header');
+	$this->load->view('user/register');
+		$this->load->view('user/modular/footer');
+	}
 }

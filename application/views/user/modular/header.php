@@ -2,9 +2,12 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
+    <link rel="icon" 
+      type="image/png" 
+      href="/asede.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <script src="https://kit.fontawesome.com/d6a070d43a.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <style>
@@ -17,12 +20,27 @@
   padding-top:2px;
   padding-bottom:2px;
 }
+.takbiran {
+  text-align:center;
+  width:100%;
+  max-height:300px;
+  max-width:300px;
+}
+.bg-asede {
+  background: rgb(4,0,77);
+background: linear-gradient(90deg, rgba(4,0,77,1) 0%, rgba(94,9,121,1) 100%);
+}
 </style>
-    <title>asede</title>
+    <title><?php 
+    if (!isset($title)) {
+      $title = "asede";
+    }
+    echo $title;
+    ?></title>
   </head>
   <body>
 
-  <nav class="navbar navbar-expand-md navbar-dark bg-danger">
+  <nav class="navbar navbar-expand-md navbar-dark bg-asede">
   <a class="navbar-brand" href="/">
     <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
     asede
@@ -47,20 +65,24 @@
       </li>
 
 
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown" id="loggedin">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+        <i class="fas fa-user"></i> DukungFF
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item disabled" href="#">AsePoin : 0</a>
+        <a class="dropdown-item" href="#">Tukar AsePoin</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Profil</a>
+          <a class="dropdown-item" href="#">Setting</a>
+
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Logout</a>
         </div>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <a class="nav-link " href="/sulfikar" ><i class="fas fa-motorcycle"></i> Login</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
