@@ -1,7 +1,7 @@
 
 
     <div class="alert alert-success" role="alert">
-    Download Aplikasi asede untuk Android (Termasuk Burn in dan jamur)
+    Download Aplikasi asede untuk Android (<span id="baoncikadap"></span>)
 </div>
 
 <div class="row">
@@ -13,6 +13,7 @@
     <b>DukungFF</B> <span class="text-muted">00-00-0000 00:00:00</span>
   </div>
   <div class="row">
+  
   <div class="card-body col-12 col-md-9">
     <div class="pad5">
     <h5 class="card-title">FF vs Bensin Impek</h5>
@@ -61,8 +62,28 @@
 <hr>
 <h3>Tentang asede</h3>
 <p>
-asede adalah situs untuk berbagi meme tanpa rasa khawatir di report , begal mark , grup/page angud seperti di platform lain. kami mendukung free speech atau bebas untuk memberikan pendapat
+asede adalah situs untuk berbagi meme tanpa rasa khawatir di report , begal mark , grup/page angud seperti di platform lain. kami mendukung free speech atau bebas untuk memberikan pendapat . disini anda tidak akan pernah di banned karena memiliki pendapat
 </p>
+<!-- script -->
+<script>
+window.onload = function(e) {
+            handledlsubtext()
+            };
+
+function handledlsubtext() {
+  subtext = document.getElementById("baoncikadap");
+  rand = Math.floor(Math.random() * 5);
+  if (rand == 1) {
+    subtext.innerHTML = "Tidak seberat genshin impact";
+  } else if (rand == 2) {
+    subtext.innerHTML = "Support all hp termasuk j2 prime";
+  } else if (rand == 3) {
+    subtext.innerHTML = "ukuran kecil banget";
+  } else if (rand == 4) {
+    subtext.innerHTML = "support hp burn in dan jamur";
+  }
+}
+</script>
 
 <!-- modol -->
 <!-- Modol komen -->
