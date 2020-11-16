@@ -1,4 +1,7 @@
 
+    <div class="alert alert-info" role="alert">
+  Website asede masih dalam tahap beta . Sebagian fitur belum aktif dan sempurna
+</div>
 
     <div class="alert alert-success" role="alert">
     Download Aplikasi asede untuk Android (<span id="baoncikadap"></span>)
@@ -8,54 +11,8 @@
 
 <div class="col-12 col-md-8 pad5">
 
-<div class="card w-100" >
-<div class="card-header">
-    <b>DukungFF</B> <span class="text-muted">00-00-0000 00:00:00</span>
-  </div>
-  <div class="row">
-  
-  <div class="card-body col-12 col-md-9">
-    <div class="pad5">
-    <h5 class="card-title">FF vs Bensin Impek</h5>
-    <p class="card-text">game baru dari mihotod pengalihan isu . tetap kawal 8-2 . eh free fire</p>
+<?= $content ?>
 
-</div>
-  <img src="/mim/ff.jpg" class="card-img-top" alt="FF vs Bensin Impek">
-  </div>
-
-  <div class="card-body col-12 col-md-3">
-      <div class="pad5">
- <p class="card-text">Sumber : Facebook dukung ff<br> <span class="text-muted">2 Vote</span></p>
-
-    <div class="row">
-    <div class="col-4 col-md-12">
-        <div class="pad5">
-    <a href="#" class="btn btn-primary w-100">Vote</a>
-  </div>
-    </div>
-    <div class="col-4 col-md-12">
-        <div class="pad5">
-    <a href="#" class="btn btn-primary w-100">Vote'nt</a>
-  </div>
-    </div>
-    <div class="col-4 col-md-12">
-        <div class="pad5">
-    <a href="#" class="btn btn-secondary w-100" data-toggle="modal" data-target="#komenModal">Komen</a>
-  </div>
-    </div>
-    <p class="card-text btn-link" onclick="salim()">Report</p>
-
-
-    </div>
-  </div>
-  </div>
-
-</div>
-
-</div>
-<br>
-
-<a href="#" class="btn btn-primary w-100">Selanjutnya</a>
 
 </div>
 
@@ -63,7 +20,7 @@
 <hr>
 <h3>Tentang asede</h3>
 <p>
-asede adalah situs untuk berbagi meme tanpa rasa khawatir di report , begal mark , grup/page angud seperti di platform lain. kami mendukung free speech atau bebas untuk memberikan pendapat . disini anda tidak akan pernah di banned karena memiliki pendapat
+asede adalah situs untuk berbagi meme (dibaca mim) tanpa rasa khawatir di report , begal mark , grup/page angud seperti di platform lain. kami mendukung free speech atau bebas untuk memberikan pendapat . disini anda tidak akan pernah di banned karena memiliki pendapat 
 </p>
 <!-- script -->
 <script>
@@ -76,7 +33,7 @@ function salim() {
 
 function handledlsubtext() {
   subtext = document.getElementById("baoncikadap");
-  rand = Math.floor(Math.random() * 9);
+  rand = Math.floor(Math.random() * 10);
   if (rand == 1) {
     subtext.innerHTML = "Tidak seberat genshin impact";
   } else if (rand == 2) {
@@ -88,12 +45,14 @@ function handledlsubtext() {
   } else if (rand == 5) {
     subtext.innerHTML = "tidak akan dibegal dan dibisu mark";
   } else if (rand == 6) {
-    subtext.innerHTML = "rasanya seperti anda menjadi mas agus ";
+    subtext.innerHTML = "support limbah jepang bahkan limbah sampah sekalipun";
   } else if (rand == 7) {
     subtext.innerHTML = "gak tau males pengen pake aplikasi";
   } else if (rand == 8) {
     subtext.innerHTML = "hari gini masih pake website? wassalam";
-  } 
+  } else if (rand == 9) {
+    subtext.innerHTML = "tidak seburik FF 8 bit tanpa pintu";
+  }
 }
 </script>
 

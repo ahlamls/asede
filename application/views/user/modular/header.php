@@ -1,3 +1,12 @@
+<?php 
+if (!isset($loggedin)) {
+  $loggedin = "";
+}
+if (!isset($tydacklogin)) {
+  $tydacklogin = "";
+}
+
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -65,14 +74,14 @@ background: linear-gradient(90deg, rgba(4,0,77,1) 0%, rgba(94,9,121,1) 100%);
       </li>
 
 
-      <li class="nav-item dropdown" id="loggedin">
+      <li class="nav-item dropdown" id="loggedin" style="<?= $loggedin ?>">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <i class="fas fa-user"></i> DukungFF
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item disabled" href="#">AsePoin : 0</a>
+        <!-- <a class="dropdown-item disabled" href="#">AsePoin : 0</a>
         <a class="dropdown-item" href="#">Tukar AsePoin</a>
-        <div class="dropdown-divider"></div>
+        <div class="dropdown-divider"></div> -->
         <a class="dropdown-item" href="#">Profil</a>
           <a class="dropdown-item" href="#">Setting</a>
 
@@ -81,7 +90,7 @@ background: linear-gradient(90deg, rgba(4,0,77,1) 0%, rgba(94,9,121,1) 100%);
         </div>
       </li>
 
-      <li class="nav-item">
+      <li class="nav-item" id="tydacklogin" style="<?= $tydacklogin ?>">
         <a class="nav-link " href="/sulfikar" ><i class="fas fa-motorcycle"></i> Login</a>
       </li>
     </ul>
