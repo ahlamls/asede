@@ -40,7 +40,7 @@ class Home_model extends CI_Model {
            $query = $this->db->query("SELECT username,verified FROM user WHERE `id` = $poster_id ");
            $rowx = $query->row();
 
-           if (isset($row))
+           if (isset($rowx))
            {
                    $username =  $rowx->username;
                    $verified =  $rowx->verified;

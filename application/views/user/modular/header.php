@@ -51,7 +51,7 @@ background: linear-gradient(90deg, rgba(4,0,77,1) 0%, rgba(94,9,121,1) 100%);
 
   <nav class="navbar navbar-expand-md navbar-dark bg-asede">
   <a class="navbar-brand" href="/">
-    <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    <img src="/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
     asede
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,17 +76,17 @@ background: linear-gradient(90deg, rgba(4,0,77,1) 0%, rgba(94,9,121,1) 100%);
 
       <li class="nav-item dropdown" id="loggedin" style="<?= $loggedin ?>">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <i class="fas fa-user"></i> DukungFF
+        <i class="fas fa-user"></i> <?= $username ?>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
         <!-- <a class="dropdown-item disabled" href="#">AsePoin : 0</a>
         <a class="dropdown-item" href="#">Tukar AsePoin</a>
         <div class="dropdown-divider"></div> -->
-        <a class="dropdown-item" href="#">Profil</a>
-          <a class="dropdown-item" href="#">Setting</a>
+        <a class="dropdown-item" href="/u/<?= $username ?>">Profil</a>
+          <a class="dropdown-item" href="/user/setting">Setting</a>
 
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Logout</a>
+          <a class="dropdown-item" href="/user/logout">Logout</a>
         </div>
       </li>
 

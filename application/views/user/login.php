@@ -1,7 +1,7 @@
 <h1>Login</h1>
 <hr>
-<div class="alert alert-danger" role="alert">
-  Username atau Password salah . silahkan coba lagi (bukan gacha)
+<div class="alert alert-danger" role="alert" style="<?=$msgexist?>">
+ <?= $msg ?>
 </div>
 <div class="row">
 <div class="col-12 col-md-4">
@@ -9,10 +9,10 @@
 <br>
 </div>
 <div class="col-12 col-md-8">
-<form method="POST" action="/handlesulfikarnt">
+<form method="POST" action="/user/handlesulfikar">
   <div class="form-group">
     <label for="exampleInputEmail1">Username</label>
-    <input type="email" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
